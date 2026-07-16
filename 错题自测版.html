@@ -52,21 +52,19 @@
   tbody tr:hover td{background:#fafbfe;}
   th.src,td.src{width:40px; text-align:center;}
   td.src span{display:inline-block; font-size:15px; color:var(--accent); font-weight:700;}
-  td.sentence{width:41%;}
-  td.wrong{width:13%; color:var(--wrong);}
-  td.wrong span{text-decoration:line-through; text-decoration-color:rgba(214,69,69,.55);}
-  td.right{width:14%;}
+  td.sentence{width:46%;}
+  td.right{width:18%;}
   td.right span{color:var(--right); font-weight:700; background:rgba(31,157,85,.10); padding:1px 7px; border-radius:6px;}
-  td.point{width:26%; color:var(--muted); font-size:13px;}
+  td.point{width:32%; color:var(--muted); font-size:13px;}
   .blank{color:var(--accent); font-weight:700; white-space:nowrap; background:var(--chip); padding:1px 5px; border-radius:5px;}
   em{font-style:normal; color:var(--muted);}
   footer{text-align:center; color:var(--muted); font-size:13px; margin-top:40px;}
 
   /* ---- 隐藏答案:模糊,点击揭示 ---- */
-  tbody td.wrong, tbody td.right, tbody td.point{
+  tbody td.right, tbody td.point{
     filter:blur(6px); transition:filter .18s; user-select:none;
   }
-  tbody tr.show td.wrong, tbody tr.show td.right, tbody tr.show td.point{
+  tbody tr.show td.right, tbody tr.show td.point{
     filter:none; user-select:auto;
   }
   tbody tr:not(.show):hover td.right::after{
@@ -76,7 +74,7 @@
   tbody td{position:relative;}
 
   @media (max-width:720px){
-    td.sentence,td.wrong,td.right,td.point{width:auto;}
+    td.sentence,td.right,td.point{width:auto;}
   }
 </style>
 </head>
@@ -96,17 +94,17 @@
   <section>
     <h2>一、括号内词的「词性 / 词形」判断错误 <small>9 题</small></h2>
     <table>
-      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>错误答案</th><th>正确答案</th><th>考点</th></tr></thead>
+      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>正确答案</th><th>考点</th></tr></thead>
       <tbody>
-        <tr><td class="src"><span>③</span></td><td class="sentence">…these unassuming walls have a <span class="blank">___(charm)</span> story spanning thousands of years.</td><td class="wrong"><span>charmal</span></td><td class="right"><span>charming</span></td><td class="point">修饰名词 story → 形容词 charming</td></tr>
-        <tr><td class="src"><span>③</span></td><td class="sentence">…these structures stand as a true <span class="blank">___(represent)</span> of the resilience and development of Chinese history.</td><td class="wrong"><span>representment</span></td><td class="right"><span>representation</span></td><td class="point">a + true 后需名词;represent→representation</td></tr>
-        <tr><td class="src"><span>④</span></td><td class="sentence">Goodall's lifelong work demonstrates that <span class="blank">___(meaning)</span> environmental protection requires genuine commitment…</td><td class="wrong"><span>meaning</span></td><td class="right"><span>meaningful</span></td><td class="point">修饰名词 protection → 形容词</td></tr>
-        <tr><td class="src"><span>⑦</span></td><td class="sentence">…some of which reflect the <span class="blank">___(struggle)</span> and growth of ordinary people.</td><td class="wrong"><span>struggltion</span></td><td class="right"><span>struggles</span></td><td class="point">struggle 本身即名词(勿生造词),与 growth 并列</td></tr>
-        <tr><td class="src"><span>⑦</span></td><td class="sentence">Labubu's appeal spans Asia, with long lines at releases and extensive <span class="blank">___(cover)</span> in major media like BBC.</td><td class="wrong"><span>covering</span></td><td class="right"><span>coverage</span></td><td class="point">extensive 后需名词;cover→coverage(报道)<em>(coverage 属超纲词,了解即可)</em></td></tr>
-        <tr><td class="src"><span>⑩</span></td><td class="sentence">…vultures play a critical role in maintaining environmental hygiene and biodiversity <span class="blank">___(stable)</span>…</td><td class="wrong"><span>stably</span></td><td class="right"><span>stability</span></td><td class="point">maintain 的宾语需名词;stable→stability</td></tr>
-        <tr><td class="src"><span>⑫</span></td><td class="sentence">…a sense of connection between people and things, and even to the far <span class="blank">___(expand)</span> natural world.</td><td class="wrong"><span>expanded</span></td><td class="right"><span>more expansive</span></td><td class="point">修饰 natural world → 形容词;far more + 比较级</td></tr>
-        <tr><td class="src"><span>⑫</span></td><td class="sentence">…to better reflect the <span class="blank">___(unit)</span> of people and things, and people and nature.</td><td class="wrong"><span>units</span></td><td class="right"><span>unity</span></td><td class="point">the 后需名词;辨析 unit(单位)≠ unity(统一)</td></tr>
-        <tr><td class="src"><span>②</span></td><td class="sentence">China proposed <span class="blank">___(priority)</span> for future SCO agricultural cooperation…</td><td class="wrong"><span>to priority</span></td><td class="right"><span>priorities</span></td><td class="point">priority 为可数名词,泛指多项 → 复数(且 to 多余)</td></tr>
+        <tr><td class="src"><span>③</span></td><td class="sentence">…these unassuming walls have a <span class="blank">___(charm)</span> story spanning thousands of years.</td><td class="right"><span>charming</span></td><td class="point">修饰名词 story → 形容词 charming</td></tr>
+        <tr><td class="src"><span>③</span></td><td class="sentence">…these structures stand as a true <span class="blank">___(represent)</span> of the resilience and development of Chinese history.</td><td class="right"><span>representation</span></td><td class="point">a + true 后需名词;represent→representation</td></tr>
+        <tr><td class="src"><span>④</span></td><td class="sentence">Goodall's lifelong work demonstrates that <span class="blank">___(meaning)</span> environmental protection requires genuine commitment…</td><td class="right"><span>meaningful</span></td><td class="point">修饰名词 protection → 形容词</td></tr>
+        <tr><td class="src"><span>⑦</span></td><td class="sentence">…some of which reflect the <span class="blank">___(struggle)</span> and growth of ordinary people.</td><td class="right"><span>struggles</span></td><td class="point">struggle 本身即名词(勿生造词),与 growth 并列</td></tr>
+        <tr><td class="src"><span>⑦</span></td><td class="sentence">Labubu's appeal spans Asia, with long lines at releases and extensive <span class="blank">___(cover)</span> in major media like BBC.</td><td class="right"><span>coverage</span></td><td class="point">extensive 后需名词;cover→coverage(报道)<em>(coverage 属超纲词,了解即可)</em></td></tr>
+        <tr><td class="src"><span>⑩</span></td><td class="sentence">…vultures play a critical role in maintaining environmental hygiene and biodiversity <span class="blank">___(stable)</span>…</td><td class="right"><span>stability</span></td><td class="point">maintain 的宾语需名词;stable→stability</td></tr>
+        <tr><td class="src"><span>⑫</span></td><td class="sentence">…a sense of connection between people and things, and even to the far <span class="blank">___(expand)</span> natural world.</td><td class="right"><span>more expansive</span></td><td class="point">修饰 natural world → 形容词;far more + 比较级</td></tr>
+        <tr><td class="src"><span>⑫</span></td><td class="sentence">…to better reflect the <span class="blank">___(unit)</span> of people and things, and people and nature.</td><td class="right"><span>unity</span></td><td class="point">the 后需名词;辨析 unit(单位)≠ unity(统一)</td></tr>
+        <tr><td class="src"><span>②</span></td><td class="sentence">China proposed <span class="blank">___(priority)</span> for future SCO agricultural cooperation…</td><td class="right"><span>priorities</span></td><td class="point">priority 为可数名词,泛指多项 → 复数(且 to 多余)</td></tr>
       </tbody>
     </table>
   </section>
@@ -114,16 +112,16 @@
   <section>
     <h2>二、非谓语动词形式错误 <small>8 题</small></h2>
     <table>
-      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>错误答案</th><th>正确答案</th><th>考点</th></tr></thead>
+      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>正确答案</th><th>考点</th></tr></thead>
       <tbody>
-        <tr><td class="src"><span>②</span></td><td class="sentence">…and we hope <span class="blank">___(double)</span> that figure in the coming years.</td><td class="wrong"><span>doubling</span></td><td class="right"><span>to double</span></td><td class="point">hope to do</td></tr>
-        <tr><td class="src"><span>③</span></td><td class="sentence">…more than just to retain the mysterious qi, but <span class="blank">___(bear)</span> witness to the continuous story of China.</td><td class="wrong"><span>bears</span></td><td class="right"><span>to bear</span></td><td class="point">与 to retain 并列,用不定式</td></tr>
-        <tr><td class="src"><span>④</span></td><td class="sentence">Her approach to research, <span class="blank">___(base)</span> on observation rather than independent experimentation, changed primatology.</td><td class="wrong"><span>bases</span></td><td class="right"><span>based</span></td><td class="point">被动关系,过去分词;be based on</td></tr>
-        <tr><td class="src"><span>⑦</span></td><td class="sentence">Labubu…has grown from a non-mainstream favorite to a globally <span class="blank">___(collect)</span> hit.</td><td class="wrong"><span>collective</span></td><td class="right"><span>collectable</span></td><td class="point">修饰 hit → 形容词 collectable / collectible(值得收藏的);collective(集体的)词义错</td></tr>
-        <tr><td class="src"><span>⑨</span></td><td class="sentence">When you lose some abilities, you would cherish all the others <span class="blank">___(leave)</span> to you.</td><td class="wrong"><span>to leave</span></td><td class="right"><span>left</span></td><td class="point">被动、已完成,过去分词作后置定语</td></tr>
-        <tr><td class="src"><span>⑨</span></td><td class="sentence">…artists' painstaking research into ancient documents and <span class="blank">___(exist)</span> museum exhibits…</td><td class="wrong"><span>exist</span></td><td class="right"><span>existing</span></td><td class="point">主动关系(现存的),现在分词作定语</td></tr>
-        <tr><td class="src"><span>⑪</span></td><td class="sentence">…speculation about the start-up's next move, <span class="blank">___(follow)</span> the global attention acquired by the firm's latest V3 model…</td><td class="wrong"><span>followed</span></td><td class="right"><span>following</span></td><td class="point">主动关系,现在分词作状语(紧随)</td></tr>
-        <tr><td class="src"><span>⑫</span></td><td class="sentence">When <span class="blank">___(season)</span> tea lovers comment on a cup of tea, they might comment on its qi and yun.</td><td class="wrong"><span>seasons</span></td><td class="right"><span>seasoned</span></td><td class="point">过去分词作定语(经验丰富的)</td></tr>
+        <tr><td class="src"><span>②</span></td><td class="sentence">…and we hope <span class="blank">___(double)</span> that figure in the coming years.</td><td class="right"><span>to double</span></td><td class="point">hope to do</td></tr>
+        <tr><td class="src"><span>③</span></td><td class="sentence">…more than just to retain the mysterious qi, but <span class="blank">___(bear)</span> witness to the continuous story of China.</td><td class="right"><span>to bear</span></td><td class="point">与 to retain 并列,用不定式</td></tr>
+        <tr><td class="src"><span>④</span></td><td class="sentence">Her approach to research, <span class="blank">___(base)</span> on observation rather than independent experimentation, changed primatology.</td><td class="right"><span>based</span></td><td class="point">被动关系,过去分词;be based on</td></tr>
+        <tr><td class="src"><span>⑦</span></td><td class="sentence">Labubu…has grown from a non-mainstream favorite to a globally <span class="blank">___(collect)</span> hit.</td><td class="right"><span>collectable</span></td><td class="point">修饰 hit → 形容词 collectable / collectible(值得收藏的);collective(集体的)词义错</td></tr>
+        <tr><td class="src"><span>⑨</span></td><td class="sentence">When you lose some abilities, you would cherish all the others <span class="blank">___(leave)</span> to you.</td><td class="right"><span>left</span></td><td class="point">被动、已完成,过去分词作后置定语</td></tr>
+        <tr><td class="src"><span>⑨</span></td><td class="sentence">…artists' painstaking research into ancient documents and <span class="blank">___(exist)</span> museum exhibits…</td><td class="right"><span>existing</span></td><td class="point">主动关系(现存的),现在分词作定语</td></tr>
+        <tr><td class="src"><span>⑪</span></td><td class="sentence">…speculation about the start-up's next move, <span class="blank">___(follow)</span> the global attention acquired by the firm's latest V3 model…</td><td class="right"><span>following</span></td><td class="point">主动关系,现在分词作状语(紧随)</td></tr>
+        <tr><td class="src"><span>⑫</span></td><td class="sentence">When <span class="blank">___(season)</span> tea lovers comment on a cup of tea, they might comment on its qi and yun.</td><td class="right"><span>seasoned</span></td><td class="point">过去分词作定语(经验丰富的)</td></tr>
       </tbody>
     </table>
   </section>
@@ -131,14 +129,14 @@
   <section>
     <h2>三、谓语动词错误:时态 / 语态 / 主谓一致 <small>6 题</small></h2>
     <table>
-      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>错误答案</th><th>正确答案</th><th>考点</th></tr></thead>
+      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>正确答案</th><th>考点</th></tr></thead>
       <tbody>
-        <tr><td class="src"><span>③</span></td><td class="sentence">Yet the purpose as well as its meaning <span class="blank">___(evolve)</span> over the course of history.</td><td class="wrong"><span>have been evolved</span></td><td class="right"><span>has evolved</span></td><td class="point">A as well as B 谓语随 A(单数)+ evolve 不用被动</td></tr>
-        <tr><td class="src"><span>④</span></td><td class="sentence">Jane Goodall, the world-renowned primatologist, <span class="blank">___(honor)</span> with numerous international awards throughout her career over six decades.</td><td class="wrong"><span>Having honored</span></td><td class="right"><span>has been honored</span></td><td class="point">句子需谓语;主谓被动、现在完成时</td></tr>
-        <tr><td class="src"><span>⑨</span></td><td class="sentence">Porcelain featuring these techniques <span class="blank">___(fire)</span> at lower temperatures, with the different colored glazes and enamels applied to individual areas created by the slip lines.</td><td class="wrong"><span>fire</span></td><td class="right"><span>is fired</span></td><td class="point">主语 Porcelain 与 fire(烧制)是被动、单数 → 一般现在时被动 is fired ✓</td></tr>
-        <tr><td class="src"><span>⑨</span></td><td class="sentence">The hardest part…is that the fahua techniques <span class="blank">___(lose)</span> for about 300 years…</td><td class="wrong"><span>have lost</span></td><td class="right"><span>have been lost</span></td><td class="point">现在完成时的被动语态</td></tr>
-        <tr><td class="src"><span>⑩</span></td><td class="sentence">All <span class="blank">___(list)</span> on the IUCN Red List as critically endangered.</td><td class="wrong"><span>listed</span></td><td class="right"><span>are listed</span></td><td class="point">缺 be、被动语态(be listed on)</td></tr>
-        <tr><td class="src"><span>⑪</span></td><td class="sentence">DeepSeek said the company <span class="blank">___(intend)</span> to make the GRM models open source…</td><td class="wrong"><span>would</span></td><td class="right"><span>intended</span></td><td class="point">与主句 said 时态一致(过去时)</td></tr>
+        <tr><td class="src"><span>③</span></td><td class="sentence">Yet the purpose as well as its meaning <span class="blank">___(evolve)</span> over the course of history.</td><td class="right"><span>has evolved</span></td><td class="point">A as well as B 谓语随 A(单数)+ evolve 不用被动</td></tr>
+        <tr><td class="src"><span>④</span></td><td class="sentence">Jane Goodall, the world-renowned primatologist, <span class="blank">___(honor)</span> with numerous international awards throughout her career over six decades.</td><td class="right"><span>has been honored</span></td><td class="point">句子需谓语;主谓被动、现在完成时</td></tr>
+        <tr><td class="src"><span>⑨</span></td><td class="sentence">Porcelain featuring these techniques <span class="blank">___(fire)</span> at lower temperatures, with the different colored glazes and enamels applied to individual areas created by the slip lines.</td><td class="right"><span>is fired</span></td><td class="point">主语 Porcelain 与 fire(烧制)是被动、单数 → 一般现在时被动 is fired ✓</td></tr>
+        <tr><td class="src"><span>⑨</span></td><td class="sentence">The hardest part…is that the fahua techniques <span class="blank">___(lose)</span> for about 300 years…</td><td class="right"><span>have been lost</span></td><td class="point">现在完成时的被动语态</td></tr>
+        <tr><td class="src"><span>⑩</span></td><td class="sentence">All <span class="blank">___(list)</span> on the IUCN Red List as critically endangered.</td><td class="right"><span>are listed</span></td><td class="point">缺 be、被动语态(be listed on)</td></tr>
+        <tr><td class="src"><span>⑪</span></td><td class="sentence">DeepSeek said the company <span class="blank">___(intend)</span> to make the GRM models open source…</td><td class="right"><span>intended</span></td><td class="point">与主句 said 时态一致(过去时)</td></tr>
       </tbody>
     </table>
   </section>
@@ -146,14 +144,14 @@
   <section>
     <h2>四、从句连接词错误 <small>6 题</small></h2>
     <table>
-      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>错误答案</th><th>正确答案</th><th>考点</th></tr></thead>
+      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>正确答案</th><th>考点</th></tr></thead>
       <tbody>
-        <tr><td class="src"><span>②</span></td><td class="sentence">The meeting, <span class="blank">___</span> almost all participants highlighted opportunities…, concluded with the adoption of a joint statement…</td><td class="wrong"><span>that</span></td><td class="right"><span>where</span></td><td class="point">非限定定语从句,关系副词 where</td></tr>
-        <tr><td class="src"><span>④</span></td><td class="sentence">Not only did she make the astonishing discovery <span class="blank">___</span> chimpanzees use tools…</td><td class="wrong"><span>and</span></td><td class="right"><span>that</span></td><td class="point">同位语从句连词 that</td></tr>
-        <tr><td class="src"><span>⑤</span></td><td class="sentence">A new journal article…aimed to examine <span class="blank">___</span> the association…occurs across cultures.</td><td class="wrong"><span>for it</span></td><td class="right"><span>whether / if</span></td><td class="point">宾语从句连词(是否)</td></tr>
-        <tr><td class="src"><span>⑧</span></td><td class="sentence">However, <span class="blank">___</span> we noted earlier, our brains have limited resources…</td><td class="wrong"><span>when</span></td><td class="right"><span>as</span></td><td class="point">状语从句 as(正如)</td></tr>
-        <tr><td class="src"><span>⑨</span></td><td class="sentence">…the porcelain version of cloisonne, <span class="blank">___</span> the design elements are separated by copper wires.</td><td class="wrong"><span>and</span></td><td class="right"><span>where</span></td><td class="point">非限定定语从句,关系副词 where</td></tr>
-        <tr><td class="src"><span>⑫</span></td><td class="sentence">…a way to distinguish beginners at tea, <span class="blank">___</span> focus on taste, from experts…</td><td class="wrong"><span>which</span></td><td class="right"><span>who</span></td><td class="point">定语从句关系词,先行词指人用 who</td></tr>
+        <tr><td class="src"><span>②</span></td><td class="sentence">The meeting, <span class="blank">___</span> almost all participants highlighted opportunities…, concluded with the adoption of a joint statement…</td><td class="right"><span>where</span></td><td class="point">非限定定语从句,关系副词 where</td></tr>
+        <tr><td class="src"><span>④</span></td><td class="sentence">Not only did she make the astonishing discovery <span class="blank">___</span> chimpanzees use tools…</td><td class="right"><span>that</span></td><td class="point">同位语从句连词 that</td></tr>
+        <tr><td class="src"><span>⑤</span></td><td class="sentence">A new journal article…aimed to examine <span class="blank">___</span> the association…occurs across cultures.</td><td class="right"><span>whether / if</span></td><td class="point">宾语从句连词(是否)</td></tr>
+        <tr><td class="src"><span>⑧</span></td><td class="sentence">However, <span class="blank">___</span> we noted earlier, our brains have limited resources…</td><td class="right"><span>as</span></td><td class="point">状语从句 as(正如)</td></tr>
+        <tr><td class="src"><span>⑨</span></td><td class="sentence">…the porcelain version of cloisonne, <span class="blank">___</span> the design elements are separated by copper wires.</td><td class="right"><span>where</span></td><td class="point">非限定定语从句,关系副词 where</td></tr>
+        <tr><td class="src"><span>⑫</span></td><td class="sentence">…a way to distinguish beginners at tea, <span class="blank">___</span> focus on taste, from experts…</td><td class="right"><span>who</span></td><td class="point">定语从句关系词,先行词指人用 who</td></tr>
       </tbody>
     </table>
   </section>
@@ -161,15 +159,15 @@
   <section>
     <h2>五、介词 / 固定搭配错误 <small>7 题</small></h2>
     <table>
-      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>错误答案</th><th>正确答案</th><th>考点</th></tr></thead>
+      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>正确答案</th><th>考点</th></tr></thead>
       <tbody>
-        <tr><td class="src"><span>②</span></td><td class="sentence">China remains <span class="blank">___(commit)</span> to high-level agricultural opening up…</td><td class="wrong"><span>to commit</span></td><td class="right"><span>committed</span></td><td class="point">be/remain committed to(致力于)</td></tr>
-        <tr><td class="src"><span>②</span></td><td class="sentence">…exports of…traditional Chinese medicine <span class="blank">___</span> over 40 countries and regions…</td><td class="wrong"><span>for</span></td><td class="right"><span>to</span></td><td class="point">export(s) to + 地点</td></tr>
-        <tr><td class="src"><span>③</span></td><td class="sentence">Zhaobi later became more of a form of artistic expression, <span class="blank">___</span> families using it as a canvas…</td><td class="wrong"><span>what</span></td><td class="right"><span>with</span></td><td class="point">with 复合结构(with + n. + doing)</td></tr>
-        <tr><td class="src"><span>⑦</span></td><td class="sentence"><span class="blank">___</span> many toys which are mass-produced without much thought, each Labubu doll has a unique story…</td><td class="wrong"><span>Although</span></td><td class="right"><span>Unlike</span></td><td class="point">后接名词短语用介词 unlike(≠连词 although)</td></tr>
-        <tr><td class="src"><span>⑧</span></td><td class="sentence">The problem is, <span class="blank">___</span> most modern human environments, there are things that 'actively' attract our attention.</td><td class="wrong"><span>the</span></td><td class="right"><span>in</span></td><td class="point">介词 in(在…环境中)</td></tr>
-        <tr><td class="src"><span>⑩</span></td><td class="sentence">The conservationist group has periodically fed the birds <span class="blank">___</span> dead domestic cattle…</td><td class="wrong"><span>that</span></td><td class="right"><span>with</span></td><td class="point">feed sb with sth</td></tr>
-        <tr><td class="src"><span>⑪</span></td><td class="sentence">…improving the reasoning capabilities of LLMs <span class="blank">___</span> the public awaiting the release…</td><td class="wrong"><span>and</span></td><td class="right"><span>with</span></td><td class="point">with 复合结构/独立主格</td></tr>
+        <tr><td class="src"><span>②</span></td><td class="sentence">China remains <span class="blank">___(commit)</span> to high-level agricultural opening up…</td><td class="right"><span>committed</span></td><td class="point">be/remain committed to(致力于)</td></tr>
+        <tr><td class="src"><span>②</span></td><td class="sentence">…exports of…traditional Chinese medicine <span class="blank">___</span> over 40 countries and regions…</td><td class="right"><span>to</span></td><td class="point">export(s) to + 地点</td></tr>
+        <tr><td class="src"><span>③</span></td><td class="sentence">Zhaobi later became more of a form of artistic expression, <span class="blank">___</span> families using it as a canvas…</td><td class="right"><span>with</span></td><td class="point">with 复合结构(with + n. + doing)</td></tr>
+        <tr><td class="src"><span>⑦</span></td><td class="sentence"><span class="blank">___</span> many toys which are mass-produced without much thought, each Labubu doll has a unique story…</td><td class="right"><span>Unlike</span></td><td class="point">后接名词短语用介词 unlike(≠连词 although)</td></tr>
+        <tr><td class="src"><span>⑧</span></td><td class="sentence">The problem is, <span class="blank">___</span> most modern human environments, there are things that 'actively' attract our attention.</td><td class="right"><span>in</span></td><td class="point">介词 in(在…环境中)</td></tr>
+        <tr><td class="src"><span>⑩</span></td><td class="sentence">The conservationist group has periodically fed the birds <span class="blank">___</span> dead domestic cattle…</td><td class="right"><span>with</span></td><td class="point">feed sb with sth</td></tr>
+        <tr><td class="src"><span>⑪</span></td><td class="sentence">…improving the reasoning capabilities of LLMs <span class="blank">___</span> the public awaiting the release…</td><td class="right"><span>with</span></td><td class="point">with 复合结构/独立主格</td></tr>
       </tbody>
     </table>
   </section>
@@ -177,10 +175,10 @@
   <section>
     <h2>六、冠词 / 代词错误 <small>2 题</small></h2>
     <table>
-      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>错误答案</th><th>正确答案</th><th>考点</th></tr></thead>
+      <thead><tr><th class="src">篇</th><th>错题所在句子</th><th>正确答案</th><th>考点</th></tr></thead>
       <tbody>
-        <tr><td class="src"><span>⑤</span></td><td class="sentence">These links can be explained based on the conceptual metaphor theory, and the center of <span class="blank">___</span> is that…</td><td class="wrong"><em>（误）</em></td><td class="right"><span>it</span></td><td class="point">介词 of 后用代词 it 指代 the theory</td></tr>
-        <tr><td class="src"><span>⑩</span></td><td class="sentence">…the highest-ever number in the last five years, said <span class="blank">___</span> vulture census result released on Friday.</td><td class="wrong"><span>that</span></td><td class="right"><span>the</span></td><td class="point">定冠词 the(特指这份结果)</td></tr>
+        <tr><td class="src"><span>⑤</span></td><td class="sentence">These links can be explained based on the conceptual metaphor theory, and the center of <span class="blank">___</span> is that…</td><td class="right"><span>it</span></td><td class="point">介词 of 后用代词 it 指代 the theory</td></tr>
+        <tr><td class="src"><span>⑩</span></td><td class="sentence">…the highest-ever number in the last five years, said <span class="blank">___</span> vulture census result released on Friday.</td><td class="right"><span>the</span></td><td class="point">定冠词 the(特指这份结果)</td></tr>
       </tbody>
     </table>
   </section>
