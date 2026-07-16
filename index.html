@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英语语法填空 · 错题整理器</title>
+<style>
+  :root{--bg:#f4f6f9;--card:#fff;--ink:#1f2733;--muted:#6b7688;--line:#e2e7ee;--accent:#2f6df6;}
+  *{box-sizing:border-box;}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+    background:var(--bg);color:var(--ink);padding:32px 16px;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",'Segoe UI',sans-serif;}
+  .wrap{max-width:640px;width:100%;text-align:center;}
+  h1{font-size:28px;margin:0 0 8px;}
+  p.sub{color:var(--muted);margin:0 0 32px;font-size:15px;}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  a.card{display:block;text-decoration:none;color:inherit;background:var(--card);
+    border:1px solid var(--line);border-radius:16px;padding:26px 22px;text-align:left;
+    box-shadow:0 1px 3px rgba(20,30,50,.06);transition:.18s;}
+  a.card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 6px 18px rgba(47,109,246,.14);}
+  a.card .ico{font-size:30px;}
+  a.card h2{font-size:18px;margin:12px 0 6px;}
+  a.card span{color:var(--muted);font-size:13px;line-height:1.55;display:block;}
+  footer{margin-top:30px;color:var(--muted);font-size:13px;}
+  footer a{color:var(--accent);text-decoration:none;}
+  @media (max-width:560px){.cards{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>英语语法填空 · 错题整理器</h1>
+    <p class="sub">按学生错误类型归为 6 类,共 38 题</p>
+    <div class="cards">
+      <a class="card" href="错题分类整理.html">
+        <div class="ico">📘</div>
+        <h2>完整讲解版</h2>
+        <span>每题含错误答案、正确答案、考点,并附错误类型统计诊断。适合复习 / 打印。</span>
+      </a>
+      <a class="card" href="错题自测版.html">
+        <div class="ico">✏️</div>
+        <h2>交互自测版</h2>
+        <span>答案默认打码,点击每行揭示;支持一键全部显示 / 隐藏。适合做题自测。</span>
+      </a>
+    </div>
+    <footer>源码仓库:<a href="https://github.com/Tumei130coding/wrong-question-organizer">GitHub</a></footer>
+  </div>
+</body>
+</html>
